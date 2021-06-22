@@ -48,6 +48,9 @@ def handle_message(event):
     elif event.message.text == "中翻日":
         msg =  TextSendMessage(text = '語言設定為日文')
         lang='ja'
+    elif event.message.text == "中翻韓":
+        msg =  TextSendMessage(text = '語言設定為韓文')
+        lang='ko'
     elif event.message.text == "圖片秀":
         msg =  image_carousel_message1() 
     else:
@@ -62,25 +65,25 @@ def image_carousel_message1():
         template=ImageCarouselTemplate(
             columns=[
                 ImageCarouselColumn(
-                    image_url="https://www.nups.ntnu.edu.tw/upfiles/univ-expo/%E5%8D%97%E9%83%A8/%E9%AB%98%E9%9B%84%E5%B8%82/%E6%8A%80%E5%B0%88%E6%A0%A1%E9%99%A2/%E6%96%87%E8%97%BB/%E6%96%87%E8%97%BB-pic02.jpg",
+                    image_url="https://im.marieclaire.com.tw/m800c533h100b0/assets/mc/201904/5CC85BAE267B41556634542.jpeg",
                     action=URITemplateAction(
-                        label="文藻校園-1",
-                        uri="https://www.nups.ntnu.edu.tw/upfiles/univ-expo/%E5%8D%97%E9%83%A8/%E9%AB%98%E9%9B%84%E5%B8%82/%E6%8A%80%E5%B0%88%E6%A0%A1%E9%99%A2/%E6%96%87%E8%97%BB/%E6%96%87%E8%97%BB-pic02.jpg"
+                        label="K-BOY",
+                        uri="https://im.marieclaire.com.tw/m800c533h100b0/assets/mc/201904/5CC85BAE267B41556634542.jpegh"
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url="https://www.nups.ntnu.edu.tw/upfiles/univ-expo/%E5%8D%97%E9%83%A8/%E9%AB%98%E9%9B%84%E5%B8%82/%E6%8A%80%E5%B0%88%E6%A0%A1%E9%99%A2/%E6%96%87%E8%97%BB/%E6%96%87%E8%97%BB-pic03.jpg",
+                    image_url="https://news.agentm.tw/wp-content/uploads/cover-1-1258-750x422.jpg",
                     action=URITemplateAction(
-                        label="文藻校園-2",
-                        uri="https://www.nups.ntnu.edu.tw/upfiles/univ-expo/%E5%8D%97%E9%83%A8/%E9%AB%98%E9%9B%84%E5%B8%82/%E6%8A%80%E5%B0%88%E6%A0%A1%E9%99%A2/%E6%96%87%E8%97%BB/%E6%96%87%E8%97%BB-pic03.jpg"
+                        label="K-BOY-2",
+                        uri="https://news.agentm.tw/wp-content/uploads/cover-1-1258-750x422.jpg"
                     )
                 ),
                 
                 ImageCarouselColumn(
-                    image_url="https://www.nups.ntnu.edu.tw/upfiles/univ-expo/%E5%8D%97%E9%83%A8/%E9%AB%98%E9%9B%84%E5%B8%82/%E6%8A%80%E5%B0%88%E6%A0%A1%E9%99%A2/%E6%96%87%E8%97%BB/%E6%96%87%E8%97%BB-pic04.jpg",
+                    image_url="https://scontent.fkhh1-1.fna.fbcdn.net/v/t1.6435-0/c0.0.768.768a/s552x414/198324618_2497430827068812_1586733109475507562_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=da31f3&_nc_ohc=jNT4cjqsXPwAX_hT_nw&_nc_ht=scontent.fkhh1-1.fna&tp=28&oh=81fa886168aad03743aac20ab49ce930&oe=60D621CF",
                     action=URITemplateAction(
-                        label="文藻校園-3",
-                        uri="https://www.nups.ntnu.edu.tw/upfiles/univ-expo/%E5%8D%97%E9%83%A8/%E9%AB%98%E9%9B%84%E5%B8%82/%E6%8A%80%E5%B0%88%E6%A0%A1%E9%99%A2/%E6%96%87%E8%97%BB/%E6%96%87%E8%97%BB-pic04.jpg"
+                        label="K-BOY-3",
+                        uri="https://scontent.fkhh1-1.fna.fbcdn.net/v/t1.6435-0/c0.0.768.768a/s552x414/198324618_2497430827068812_1586733109475507562_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=da31f3&_nc_ohc=jNT4cjqsXPwAX_hT_nw&_nc_ht=scontent.fkhh1-1.fna&tp=28&oh=81fa886168aad03743aac20ab49ce930&oe=60D621CF"
                     )
                 )
             ]
